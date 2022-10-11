@@ -1,0 +1,14 @@
+{
+  "Id": "mapArena_riverCrossing_vHigh_test",
+  "FriendlyName": "mapArena_riverCrossing_vHigh_test",
+  "MetadataName": "mapArena_riverCrossing_vHigh_test_metadata",
+  "BasedOn": "mapArena_riverCrossing_vHigh",
+  "encounterLayerNames": [
+    "encArena_Skirmish"
+  ],
+  "Tags": [
+    "biomeVerdantHighlands",
+    "featureRiver",
+    "typeArena"
+  ]
+}
