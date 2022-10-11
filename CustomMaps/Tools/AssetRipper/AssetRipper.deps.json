@@ -15,7 +15,7 @@
           "CommandLineParser": "2.9.1",
           "LibVLCSharp": "3.6.6",
           "LibVLCSharp.Avalonia": "3.6.6",
-          "MessageBox.Avalonia": "2.0.2",
+          "MessageBox.Avalonia": "2.1.0",
           "System.IO.FileSystem": "4.3.0",
           "System.IO.FileSystem.AccessControl": "5.0.0",
           "System.Security.AccessControl": "6.0.0",
@@ -619,7 +619,7 @@
           }
         }
       },
-      "MessageBox.Avalonia/2.0.2": {
+      "MessageBox.Avalonia/2.1.0": {
         "dependencies": {
           "Avalonia": "0.10.18",
           "Markdown.Avalonia": "0.10.11"
@@ -991,33 +991,33 @@
           "Microsoft.NETCore.Targets": "1.1.0"
         }
       },
-      "Samboy063.Cpp2IL.Core/2022.0.5": {
+      "Samboy063.Cpp2IL.Core/2022.0.7": {
         "dependencies": {
           "HarmonyX": "2.5.5",
           "Iced": "1.11.1",
           "IndexRange": "1.0.2",
           "Mono.Cecil": "0.11.4",
-          "Samboy063.LibCpp2IL": "2022.0.5",
+          "Samboy063.LibCpp2IL": "2022.0.7",
           "System.Runtime.InteropServices": "4.3.0",
           "System.ValueTuple": "4.5.0",
           "js6pak.Gee.External.Capstone": "2.1.0"
         },
         "runtime": {
           "lib/netstandard2.0/Cpp2IL.Core.dll": {
-            "assemblyVersion": "2022.0.5.0",
-            "fileVersion": "2022.0.5.0"
+            "assemblyVersion": "2022.0.7.0",
+            "fileVersion": "2022.0.7.0"
           }
         }
       },
-      "Samboy063.LibCpp2IL/2022.0.5": {
+      "Samboy063.LibCpp2IL/2022.0.7": {
         "dependencies": {
           "IndexRange": "1.0.2",
           "Samboy063.WasmDisassembler": "2022.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/LibCpp2IL.dll": {
-            "assemblyVersion": "2022.0.5.0",
-            "fileVersion": "2022.0.5.0"
+            "assemblyVersion": "2022.0.7.0",
+            "fileVersion": "2022.0.7.0"
           }
         }
       },
@@ -1517,7 +1517,7 @@
           "AssetRipper.Yaml": "1.0.0",
           "K4os.Compression.LZ4": "1.2.16",
           "Mono.Cecil": "0.11.4",
-          "Samboy063.Cpp2IL.Core": "2022.0.5",
+          "Samboy063.Cpp2IL.Core": "2022.0.7",
           "SharpCompress": "0.32.2",
           "SharpZipLib": "1.4.0"
         },
@@ -1874,12 +1874,12 @@
       "path": "markdown.avalonia.tight/0.10.11",
       "hashPath": "markdown.avalonia.tight.0.10.11.nupkg.sha512"
     },
-    "MessageBox.Avalonia/2.0.2": {
+    "MessageBox.Avalonia/2.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-51bQCmDMhBCgoFvrEpv+BV/v0zrah+caJ/3e6fpE4ghi4m2wz30uUqPode1/Pb/Kn2e2BRJ5vfSOo1fNby2TMA==",
-      "path": "messagebox.avalonia/2.0.2",
-      "hashPath": "messagebox.avalonia.2.0.2.nupkg.sha512"
+      "sha512": "sha512-mZ6WEq5PmPyfXD0HADMs3WKbEXGeRNzaQ343RZm2M9sz9Wu0/uoIAePPhulYoofPkb3h11FzZ7dfc0HKTWi3og==",
+      "path": "messagebox.avalonia/2.1.0",
+      "hashPath": "messagebox.avalonia.2.1.0.nupkg.sha512"
     },
     "Microsoft.CodeAnalysis.Analyzers/2.9.6": {
       "type": "package",
@@ -2000,19 +2000,19 @@
       "path": "runtime.native.system/4.3.0",
       "hashPath": "runtime.native.system.4.3.0.nupkg.sha512"
     },
-    "Samboy063.Cpp2IL.Core/2022.0.5": {
+    "Samboy063.Cpp2IL.Core/2022.0.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-5JipfyEmJWePqLLnvwzxWx9dQXxNfgN0wcZ4IcmuabWKVvk4gA5Rux4vgDh9NrWf8q9LzkizWHkrnMaG1niF7g==",
-      "path": "samboy063.cpp2il.core/2022.0.5",
-      "hashPath": "samboy063.cpp2il.core.2022.0.5.nupkg.sha512"
+      "sha512": "sha512-fulJTUzfYS20+zEOmMAJajVTxIMncFZ9yP0ynzZ8Aiy6qrfBcaCavnHR6wt8rsOqx2FkAGNr+MdVEWPVLynlkw==",
+      "path": "samboy063.cpp2il.core/2022.0.7",
+      "hashPath": "samboy063.cpp2il.core.2022.0.7.nupkg.sha512"
     },
-    "Samboy063.LibCpp2IL/2022.0.5": {
+    "Samboy063.LibCpp2IL/2022.0.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-eH+/FBclsKDxboa9N/tFoiM8kwvietVX0FtXYxvcexSp/geYCyTt2XUGOQjinqd3Yqg/QxmpIqBO7qy4MQHrhw==",
-      "path": "samboy063.libcpp2il/2022.0.5",
-      "hashPath": "samboy063.libcpp2il.2022.0.5.nupkg.sha512"
+      "sha512": "sha512-O3K8dO6JbgipGVFLtE7kBSqvDq5TZ4DRc2/WRNYMdukIyeX/vY3DoSsjboS1yIi2u4+8/fd0aafKUtwZvV/PSg==",
+      "path": "samboy063.libcpp2il/2022.0.7",
+      "hashPath": "samboy063.libcpp2il.2022.0.7.nupkg.sha512"
     },
     "Samboy063.WasmDisassembler/2022.0.2": {
       "type": "package",
