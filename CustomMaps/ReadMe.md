@@ -1,18 +1,18 @@
 ﻿This tutorial supposes next
 
-\1. You have basic experience in BattleTech modding, eg. you can create mod.json, know about mods manifests etc.
+1. You have basic experience in BattleTech modding, eg. you can create mod.json, know about mods manifests etc.
 
-\2. You have basic experience on Unity editor eg. you know how to manipulate items, add scripts to objects, know about MeshRenderer, MeshFilter, Terrain, etc concepts.
+2. You have basic experience on Unity editor eg. you know how to manipulate items, add scripts to objects, know about MeshRenderer, MeshFilter, Terrain, etc concepts.
 
-\3. You know how to use Notepad++ and similar text editors, you know how to copy files, know how to understand what assembly version is.
+3. You know how to use Notepad++ and similar text editors, you know how to copy files, know how to understand what assembly version is.
 
 Software pre-requirements
 
-\1. BattleTech with latest RogueTech installed. Potentially it can work even with vanilla but i’ve developed it for RogueTech, debugged in RogueTech environment not tested in other environments. If you are modpack maintainer and going to respect my authorship, you can contact me (KMiSSioN) at RogueTech discord (<https://discord.gg/93kxWQZ>) to discuss permissions and solve compatibility problems.
+1. BattleTech with latest RogueTech installed. Potentially it can work even with vanilla but i’ve developed it for RogueTech, debugged in RogueTech environment not tested in other environments. If you are modpack maintainer and going to respect my authorship, you can contact me (KMiSSioN) at RogueTech discord (<https://discord.gg/93kxWQZ>) to discuss permissions and solve compatibility problems.
 
-\2. Unity Editor version 2018.4.f3-11 (game itself using Unity engine version 2018.4.f3). I’m using 2018.4.f11. You should not experience any problem if using any version in between.
+2. Unity Editor version 2018.4.f3-11 (game itself using Unity engine version 2018.4.f3). I’m using 2018.4.f11. You should not experience any problem if using any version in between.
 
-\3. Custom version of AssetRipper. Original version unfortunately have one problem – ones it encounters asses it can’t export it throws exception and stops. My custom version skips assets it can’t export and proceed. There are three possible sources of mentioned tool.
+3. Custom version of AssetRipper. Original version unfortunately have one problem – ones it encounters asses it can’t export it throws exception and stops. My custom version skips assets it can’t export and proceed. There are three possible sources of mentioned tool.
 
 a) Get sources from my fork repository and build them by yourself. VisualStudio 2022 required. Fork <https://github.com/CMiSSioN/AssetRipper>
 
@@ -20,36 +20,36 @@ b) Get specific AssetRipper version binaries (2.4.1 - unfortunately 2.4.2 have w
 
 c) get whole AssetRipper build by me from my fork of original repository. Here <https://github.com/CMiSSioN/CustomMaps/releases> under “Assets” you you will found some assemblies and tools you need.
 
-\4. Latest versions of CustomMaps and CustomMapsEditor assemblies. Here <https://github.com/CMiSSioN/CustomMaps/releases> under “Assets” you will found some assemblies and tools you need.
+4. Latest versions of CustomMaps and CustomMapsEditor assemblies. Here <https://github.com/CMiSSioN/CustomMaps/releases> under “Assets” you will found some assemblies and tools you need.
 
 
 Preparation.
 
-\1. Close all “heavy” application, cause exporting process needs as many resources as your PC can provide.
+1. Close all “heavy” application, cause exporting process needs as many resources as your PC can provide.
 
-\2. Unpack file from  <https://github.com/CMiSSioN/CustomMaps/releases> to you Mods/Core/CustomMaps folder with replace. Your CustomMaps folder should looks similar to this
+2. Unpack file from  <https://github.com/CMiSSioN/CustomMaps/releases> to you Mods/Core/CustomMaps folder with replace. Your CustomMaps folder should looks similar to this
 
 ![](pictures/Aspose.Words.46b93aa9-0f0d-4dc8-b6d5-a62f1c93b1a4.001.png)
 
 if you have CustomMaps subfolder in your Mods/Core/CustomMaps – you’ve done it wrong.
 
-\2. Launch AssetRiper from Core/CustomMaps/Tools/AssetRipper
+2. Launch AssetRiper from Core/CustomMaps/Tools/AssetRipper
 
 ![](pictures/Aspose.Words.46b93aa9-0f0d-4dc8-b6d5-a62f1c93b1a4.002.png)and set options as on screen.
 
-\3. In main menu choose File/Open Folder and select BattleTech\_Data folder. Prepare to wait. Once interface show you assets tree in main menu choose Export/Export all files. Choose destination folder with as short path as possible. Prepare to long wait.
+3. In main menu choose File/Open Folder and select BattleTech\_Data folder. Prepare to wait. Once interface show you assets tree in main menu choose Export/Export all files. Choose destination folder with as short path as possible. Prepare to long wait.
 
-\4. Close AssetRipper. Navigate folder your choose for an export find folder where Assets sub-folder is. Copy all folders from Core/CustomMaps/Tools/ForProject to this folder with replacement. Also delete Assets/Scripts folder in your unity project.
+4. Close AssetRipper. Navigate folder your choose for an export find folder where Assets sub-folder is. Copy all folders from Core/CustomMaps/Tools/ForProject to this folder with replacement. Also delete Assets/Scripts folder in your unity project.
 
-\5. Open unity editor and open project (choose folder you’ve found on previous step). Prepare to wait even longer than while export.
+5. Open unity editor and open project (choose folder you’ve found on previous step). Prepare to wait even longer than while export.
 
-\6. Once interface is shown close Unity Editor
+6. Once interface is shown close Unity Editor
 
-\7. Open RT launcher, disable safe launch and start game. **It is better to disable extending map boundaries and randomizing spawn positions for both skirmish and career in MissionControl settings**
+7. Open RT launcher, disable safe launch and start game. **It is better to disable extending map boundaries and randomizing spawn positions for both skirmish and career in MissionControl settings**
 
-\8. Go to the skirmish (in this tutorial i'm targeting skirmish maps cause it is faster to test, once you get basics you can try modify career map, process is similar)
+8. Go to the skirmish (in this tutorial i'm targeting skirmish maps cause it is faster to test, once you get basics you can try modify career map, process is similar)
 
-\9. Start River Crossing map (for example). **On briefing screen before launch contract but when launch button is active** press RightShift + F1. You will get a prompt for name for new map.
+9. Start River Crossing map (for example). **On briefing screen before launch contract but when launch button is active** press RightShift + F1. You will get a prompt for name for new map.
 
 ![](pictures/Aspose.Words.46b93aa9-0f0d-4dc8-b6d5-a62f1c93b1a4.003.png)Enter name “mapArena\_riverCrossing\_vHigh\_test” (for example). Name can be any, but without spaces and special characters other is on your consideration. It will save your current loaded map runtime info to Mods/Core/CustomMaps/<name you’ve entered>. **If folder is exists it will delete it before export.** Now close game and prepare yourself to edit your first map.
 
@@ -57,32 +57,32 @@ There is video can help you in process <https://youtu.be/z3nvopOsjyk>
 
 Map editing.
 
-\1. Open unity editor and open project you’ve create on stage 5 of preparation. It should be in menu now so you had not to open folder.
+1. Open unity editor and open project you’ve create on stage 5 of preparation. It should be in menu now so you had not to open folder.
 
-\2. In Assets/Level Design/Maps open scene with map you are about to edit (and exported at stage 9 of preparation). If you follow instructions it is mapArena\_riverCrossing\_vHigh.
+2. In Assets/Level Design/Maps open scene with map you are about to edit (and exported at stage 9 of preparation). If you follow instructions it is mapArena\_riverCrossing\_vHigh.
 
-\3. Save with different name.  mapArena\_riverCrossing\_vHigh\_test for example. Good idea to have the same name as you’ve entered at stage 9 of preparation. It is needed to keep original scene intact.
+3. Save with different name.  mapArena\_riverCrossing\_vHigh\_test for example. Good idea to have the same name as you’ve entered at stage 9 of preparation. It is needed to keep original scene intact.
 
-\4. Go to the <Unity project folder>/Assets/TerrainData with OS explorer or similar tool, find mapArena\_riverCrossing\_vHigh\_terrain\_x0\_y0.asset file and make two copies of if. Rename first copy as mapArena\_riverCrossing\_vHigh\_test\_terrain\_x0\_y0.asset second as mapArena\_riverCrossing\_vHigh\_test\_metadata\_x0\_y0.asset. It is needed to keep original terrain data intact.
+4. Go to the <Unity project folder>/Assets/TerrainData with OS explorer or similar tool, find mapArena\_riverCrossing\_vHigh\_terrain\_x0\_y0.asset file and make two copies of if. Rename first copy as mapArena\_riverCrossing\_vHigh\_test\_terrain\_x0\_y0.asset second as mapArena\_riverCrossing\_vHigh\_test\_metadata\_x0\_y0.asset. It is needed to keep original terrain data intact.
 
-\5. Open terrain data copies you created with text editor and change m\_Name field for both copies accordingly
+5. Open terrain data copies you created with text editor and change m\_Name field for both copies accordingly
 
 ![](pictures/Aspose.Words.46b93aa9-0f0d-4dc8-b6d5-a62f1c93b1a4.004.png)
 
 ![](pictures/Aspose.Words.46b93aa9-0f0d-4dc8-b6d5-a62f1c93b1a4.005.png)
 
-\6. Return to Unity Editor. Select terrain. Switch inspector to debug mode and change “Terrain Data” to your copy (mapArena\_riverCrossing\_vHigh\_test\_terrain\_x0\_y0) for Terrain and TerrainCollider.
+6. Return to Unity Editor. Select terrain. Switch inspector to debug mode and change “Terrain Data” to your copy (mapArena\_riverCrossing\_vHigh\_test\_terrain\_x0\_y0) for Terrain and TerrainCollider.
 
-\7. Duplicate scene terrain name it something like metadata\_instance\_x0\_y0 (actual name is on your but you need to know where is Terrain for terrain and where is Terrain for metadata). Change “Terrain Data” for metadata Terrain to mapArena\_riverCrossing\_vHigh\_test\_metadata\_x0\_y0 (again both Terrain and TerrainCollider instances). Switch inspector to normal mode.
+7. Duplicate scene terrain name it something like metadata\_instance\_x0\_y0 (actual name is on your but you need to know where is Terrain for terrain and where is Terrain for metadata). Change “Terrain Data” for metadata Terrain to mapArena\_riverCrossing\_vHigh\_test\_metadata\_x0\_y0 (again both Terrain and TerrainCollider instances). Switch inspector to normal mode.
 
 ![](pictures/Aspose.Words.46b93aa9-0f0d-4dc8-b6d5-a62f1c93b1a4.006.png)
 
 
 8.Delete all layers from both main terrain and meta terrain, delete all trees from metaterrain, change terrain material to standard both main and meta terrains, add main terrain TerrainUpdateTracker script, create new empty object, name it MapImporter (or whatever you want) and add it MapImporter script, assign terrain, meta terrain to its fields, set its MapDirectory field (it is path CustomMaps mod saves your map data on stage 9 of preparation, Mods/Core/CustomMaps/<name you’ve entered> without backslash). Select MapImporter press “Delete Missing Scripts” button, save scene, close unity editor.
 
-\9. Open unity editor again. Delete unnecessary objects. Adjust scene light. Select MapImporter and press CreateLayers, wait for finish. Press ImportMetadata, wait for finish. Press ImportTerrainData, wait for finish. Press PlaceMetaMarks, wait for finish. Press ImportObjectsData, wait for finish.
+9. Open unity editor again. Delete unnecessary objects. Adjust scene light. Select MapImporter and press CreateLayers, wait for finish. Press ImportMetadata, wait for finish. Press ImportTerrainData, wait for finish. Press PlaceMetaMarks, wait for finish. Press ImportObjectsData, wait for finish.
 
-\10. Now you can edit your terrain. At this stage it is better to disable meta terrain to not interfere, you will handle it later. What you can do (if this tutorial does not say you can do something directly, you are certainly can’t unless you know what are you doing exactly).
+10. Now you can edit your terrain. At this stage it is better to disable meta terrain to not interfere, you will handle it later. What you can do (if this tutorial does not say you can do something directly, you are certainly can’t unless you know what are you doing exactly).
 
 a) you can change terrain height
 
